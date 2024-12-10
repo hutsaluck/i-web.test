@@ -1,0 +1,101 @@
+header {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 6vw;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5vh;
+}
+
+header nav {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav li a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.125em;
+}
+
+header nav li a:hover {
+    color: rgba(255, 255, 255);
+}
+
+header nav li.current a {
+    color: #FF4B32;
+    font-weight: 700;
+}
+
+header img.menu {
+    display: none;
+}
+
+header nav li:first-child {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header nav {
+        opacity: 0;
+        /*display: none;*/
+        position: absolute;
+        width: 100vw;
+        grid-auto-flow: unset;
+        grid-template-rows: repeat(5, min-content);
+        background: #fff;
+        color: #000;
+        height: 100vh;
+        top: -5vh;
+        text-align: center;
+        gap: 40px;
+        z-index: -9;
+    }
+
+    header .menu {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        background-image: url(../images/menu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        user-select: none;
+
+        -webkit-touch-callout:none; /* iOS Safari */
+        -webkit-user-select:none;   /* Chrome/Safari/Opera */
+        -khtml-user-select:none;    /* Konqueror */
+        -moz-user-select:none;      /* Firefox */
+        -ms-user-select:none;       /* Internet Explorer/Edge */
+        user-select:none;           /* Non-prefixed version */
+    }
+
+    header .menu:hover + nav {
+        opacity: 1;
+        z-index: 9;
+    }
+
+    header nav li a {
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    header nav li:nth-child(2) {
+        margin-top: 60px;
+    }
+
+    header nav li:first-child {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}

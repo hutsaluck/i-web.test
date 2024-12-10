@@ -1,0 +1,78 @@
+.social{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/social-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10vh 0;
+    width: 100vw;
+}
+
+.social h3{
+    color: #FF4B32;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 150%;
+    margin-bottom: 9vh;
+}
+
+.social h2{
+    color: #FFF;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.69em;
+    line-height: 130%;
+}
+
+.social h2:last-of-type{
+    margin-bottom: 8vh;
+}
+
+.social a{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 150%;
+    margin-bottom: 3.5vh;
+}
+
+
+.social a.phone:before{
+    content: url(../images/phone.svg);
+    margin-right: 1vw;
+}
+
+.social a.mail:before{
+    content: url(../images/mail.svg);
+    margin-right: 1vw;
+}
+
+.social a:before{
+    transition: all .5s;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+.social a:hover:before{
+    transform: scale(1.2);
+}
+
+.social .wrap-social-links{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vw;
+    grid-auto-flow: column;
+    margin-top: 1vh;
+}
+
+.social .wrap-social-links a{
+    transition: all .5s;
+}
+
+.social .wrap-social-links a:hover{
+    transform: scale(1.2);
+}

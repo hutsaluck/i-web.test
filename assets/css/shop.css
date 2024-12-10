@@ -1,0 +1,52 @@
+.shop{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.shop h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.69em;
+    font-weight: 600;
+    line-height: 130%; /* 55.9px */
+    letter-spacing: 6.45px;
+    margin-bottom: 3vh;
+}
+
+.shop p{
+    font-size: 1.125em;
+    margin-bottom: 8vh;
+}
+
+.wrap-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10vw;
+}
+.wrap-products .product img{
+    width: 100%;
+}
+.wrap-products .product p.price{
+    color: #0C0D0C;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 4.8vh;
+    margin-bottom: 1.5vh;
+}
+.wrap-products .product h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 2vh;
+}
+.wrap-products .product p.description{
+    color: rgba(0, 0, 0, .6);
+}
+
+@media screen and (max-width: 1024px) {
+    .wrap-products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

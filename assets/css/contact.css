@@ -1,0 +1,311 @@
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+}
+
+.contact h2 {
+    color: #394648;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+.contact h2 span {
+    color: #fff;
+    text-shadow: #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px;
+}
+
+.contact h2:before {
+    content: url(../images/title-img.svg);
+    position: absolute;
+    left: -20px;
+    top: -20%;
+    z-index: -9;
+}
+
+.contact p{
+    color: #394648;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.content-form form{
+    display: grid;
+    gap: 5px;
+}
+
+.content-form form label{
+    color: #AEAFAF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.content-form form input{
+    border-radius: 100px;
+    border: 1px solid #FF4B32;
+    background: #FFF;
+    display: block;
+    height: 40px;
+    padding: 10px 15px;
+    width: -webkit-fill-available;
+}
+
+.content-form form input[type="submit"]{
+    /*margin-top: 15px;*/
+    border-radius: 100px;
+    background: #FF4B32;
+    padding: 20px 100px;
+    height: 60px;
+    display: block;
+    width: fit-content;
+    justify-self: end;
+    cursor: pointer;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.content-form form input[type="submit"]:hover {
+    background: #394648;
+}
+
+.content-form form textarea{
+    border-radius: 33px;
+    border: 1px solid #FF4B32;
+    background: #FFF;
+    padding: 10px 15px;
+    width: -webkit-fill-available;
+    resize: none;
+}
+
+
+.contact-info{
+    background-image: url(../images/contact-top.svg), url(../images/contact-bottom.svg);
+    background-position: top 0 right 0, bottom 0 right 0;
+    background-repeat: no-repeat;
+}
+.contact-info h3{
+    color: #394648;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 200px;
+    margin-bottom: 40px;
+}
+
+.contact-info img{
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info a{
+    color: #394648;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.contact-info .social-info a{
+    text-transform: capitalize;
+}
+
+
+
+
+
+.contact-info .content-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+
+.content-info .details-info{
+    display: grid;
+    gap: 20px;
+}
+.content-info .social-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-info > * > *{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+
+
+
+
+/* New data */
+.contact .wpcf7-form > p{
+    display: grid;
+    /*justify-content: flex-start;*/
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.content-form form label{
+    text-align: left;
+}
+
+.content-form form .wpcf7-not-valid-tip{
+    text-align: left;
+    margin-top: 5px;
+    /*margin-bottom: 10px;*/
+
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: #d11149;
+}
+
+form.invalid input.wpcf7-not-valid{
+    border: 1px solid #D11149;
+}
+
+form.invalid .wpcf7-form-control-wrap:has(input.wpcf7-not-valid) {
+    display: block;
+}
+form.invalid .wpcf7-form-control-wrap:has(input.wpcf7-not-valid):after {
+    content: url(../images/validate.svg);
+    position:absolute;
+    top: 15px;
+    right: -20px;
+}
+
+.contact-content .wpcf7 form .wpcf7-response-output{
+    border: none;
+    width: 65%;
+
+    padding: 0;
+    justify-self: flex-end;
+    margin-right: 10%;
+    position: relative;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: #FF4B32;
+
+    margin-top: -15px;
+    margin-right: 0;
+}
+
+.contact-content .wpcf7 form.invalid .wpcf7-response-output{
+    width: 85%;
+    color: #d11149;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output:before {
+    content: url(../images/validate.svg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+}
+
+.content-form form{
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 751px) and (max-width: 1024px) {
+    .contact-content{
+        grid-template-columns: 1fr;
+    }
+    .contact-info{
+        display: grid;
+        justify-content: center;
+        padding-bottom: 150px;
+        padding-top: 80px;
+    }
+    .contact-info h3{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .contact h2 span {
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        color: #394648;
+        text-shadow: none;
+    }
+    .contact p{
+        font-size: 20px;
+        text-align: left;
+    }
+    .contact-content{
+        grid-template-columns: 1fr;
+    }
+    .contact-info .content-info{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-info{
+        display: grid;
+        justify-content: center;
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+
+    .contact-info h3{
+        margin-top: 0;
+    }
+
+    .content-form form input[type="submit"]{
+        width: 100%;
+    }
+
+    .content-form form input, .content-form form textarea{
+        width: 70vw;
+    }
+}

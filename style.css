@@ -1,0 +1,20 @@
+/*
+   Theme Name: I-Web
+   Description: Gutenberg Theme
+   Author: Hutsaluck Yuriy
+   Text Domain: i-web
+   Domain Path: /languages
+   Author URI: https://t.me/huts06
+   Version: 1.0
+*/
+
+@import url(./assets/css/reset.min.css);
+@import url(./assets/css/base.css);
+@import url(./assets/css/header.css);
+@import url(./assets/css/main.css);
+@import url(./assets/css/shop.css);
+@import url(./assets/css/gallery.css);
+@import url(./assets/css/social.css);
+@import url(./assets/css/blog.css);
+@import url(./assets/css/contact.css);
+@import url(./assets/css/footer.css);

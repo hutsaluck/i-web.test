@@ -1,0 +1,91 @@
+.blog{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blog h2{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.67em;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 2.7vh;
+}
+
+.blog > p{
+    color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 8vh;
+    width: 40vw;
+    justify-self: center;
+}
+
+.blog .wrap-posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.blog .wrap-posts .post{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 40px 15px 136px 0px rgba(0, 0, 0, 0.20);
+
+    transition: all .5s;
+}
+
+.blog .wrap-posts .post:hover{
+    transform: scale(1.02);
+}
+
+.blog .wrap-posts img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.blog .wrap-posts .post .post-content{
+    padding: 2vw;
+}
+
+.blog .wrap-posts .post .post-content h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 1vh;
+}
+
+.blog .wrap-posts .post .post-content p{
+    color: rgba(0, 0, 0, .7);
+    margin-bottom: 2.5vh;
+}
+
+
+.blog .wrap-posts .post .post-content a{
+    color: #FF4B32;
+    font-weight: 600;
+}
+
+.blog .wrap-posts .post .post-content a:hover{
+    color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+    .blog .wrap-posts{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5vw;
+    }
+    .blog > p{
+        width: 100%;
+    }
+    .blog .wrap-posts .post .post-content{
+        padding: 5vw;
+    }
+}

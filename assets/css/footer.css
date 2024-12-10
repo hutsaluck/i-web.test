@@ -1,0 +1,117 @@
+body footer {
+    margin-top: 5vh;
+    background-color: #0D0402;
+    padding-top: 10vh;
+    padding-bottom: 6vh;
+
+    color: #ffffff;
+    font-size: 1.125em;
+}
+
+footer .wrap-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5vw;
+}
+
+footer .wrap-info h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+footer .wrap-info .logo {
+    margin-bottom: 30px;
+}
+
+footer .wrap-info section p {
+    margin-bottom: 30px;
+}
+
+footer .wrap-info section a.phone {
+    line-height: 150%;
+    color: #FFF;
+    position: relative;
+    padding-left: 35px;
+}
+
+footer .wrap-info section a.phone:before {
+    content: url(../images/phone.svg);
+    position: absolute;
+    left: 0;
+}
+
+footer .wrap-info section a:before {
+    transition: all .5s;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+footer .wrap-info section a:hover:before {
+    transform: scale(1.2);
+}
+
+footer .wrap-info section ul {
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+footer .wrap-info section ul li a {
+    line-height: 150%;
+    color: #FFF;
+}
+
+footer .wrap-info section ul li a:hover {
+    color: #FF4B32;
+}
+
+footer .wrap-info section .wrap-social-links {
+    margin-top: 45px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+    gap: 2vw;
+}
+
+footer .wrap-info section .wrap-social-links a {
+    transition: all .5s;
+}
+
+footer .wrap-info section .wrap-social-links a:hover {
+    transform: scale(1.2);
+}
+
+
+footer p.copyright {
+    text-align: center;
+    margin-top: 75px;
+}
+
+
+@media screen and (max-width: 1024px)  {
+    footer .wrap-info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer .wrap-info section .wrap-social-links{
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 750px)  {
+    footer .wrap-info{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .wrap-info section .wrap-social-links{
+        justify-content: center;
+        gap: 5vw;
+    }
+}

@@ -1,0 +1,123 @@
+.gallery{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.gallery h2{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.69em;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 2.7vh;
+}
+.gallery p{
+    color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-size: 1.125em;
+    width: 40vw;
+    justify-self: center;
+    margin-bottom: 8.2vh;
+}
+
+.wrap-photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    margin-bottom: 10vh;
+    width: 80vw;
+}
+
+.wrap-photos img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.wrap-photos .photo{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: 100% 100%;
+    transition: all .5s;
+}
+.wrap-photos .photo:hover{
+    background-size: 110% 110%;
+}
+
+.wrap-photos .photo p{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.69em;
+    font-weight: 600;
+    line-height: 130%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity .5s;
+}
+
+.wrap-photos .photo:hover p{
+    opacity: 1;
+}
+.wrap-photos .photo-1{
+    background-image: url(../images/photo-1.png);
+}
+
+.wrap-photos .photo-2{
+    background-image: url(../images/photo-2.png);
+}
+
+.wrap-photos .photo-3{
+    background-image: url(../images/photo-3.png);
+}
+
+.wrap-photos .photo-4{
+    background-image: url(../images/photo-4.png);
+}
+
+.wrap-photos .photo-5{
+    background-image: url(../images/photo-5.png);
+}
+
+.wrap-photos .photo-6{
+    background-image: url(../images/photo-6.png);
+}
+
+.gallery a{
+    color: #FF4B32;
+    text-align: center;
+    font-size: 1.125em;
+    line-height: 150%;
+}
+
+.gallery a:hover{
+    color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrap-photos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wrap-photos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
