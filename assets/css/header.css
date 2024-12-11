@@ -24,6 +24,7 @@ header nav li a {
 
 header nav li a:hover {
     color: rgba(255, 255, 255);
+    text-shadow: #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px;
 }
 
 header nav li.current a {
@@ -31,11 +32,7 @@ header nav li.current a {
     font-weight: 700;
 }
 
-header img.menu {
-    display: none;
-}
-
-header nav li:first-child {
+header img.menu, header img.close {
     display: none;
 }
 
@@ -46,11 +43,11 @@ header nav li:first-child {
 
     header nav {
         opacity: 0;
-        /*display: none;*/
         position: absolute;
         width: 100vw;
-        grid-auto-flow: unset;
-        grid-template-rows: repeat(5, min-content);
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: flex-start;
         background: #fff;
         color: #000;
         height: 100vh;
@@ -58,27 +55,32 @@ header nav li:first-child {
         text-align: center;
         gap: 40px;
         z-index: -9;
+        padding-top: 70px;
     }
 
-    header .menu {
+    header img.menu {
         display: block;
         cursor: pointer;
         width: 30px;
         height: 20px;
-        background-image: url(../images/menu.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        user-select: none;
-
-        -webkit-touch-callout:none; /* iOS Safari */
-        -webkit-user-select:none;   /* Chrome/Safari/Opera */
-        -khtml-user-select:none;    /* Konqueror */
-        -moz-user-select:none;      /* Firefox */
-        -ms-user-select:none;       /* Internet Explorer/Edge */
-        user-select:none;           /* Non-prefixed version */
     }
 
-    header .menu:hover + nav {
+    body:has(nav.open){
+        overflow: hidden;
+    }
+
+    header:has(nav.open) img.close {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        z-index: 10;
+        position: absolute;
+        top: 20px;
+        right: 42px;
+    }
+
+    header nav.open {
         opacity: 1;
         z-index: 9;
     }
@@ -86,16 +88,5 @@ header nav li:first-child {
     header nav li a {
         font-size: 2em;
         color: rgba(0, 0, 0, 0.6);
-    }
-
-    header nav li:nth-child(2) {
-        margin-top: 60px;
-    }
-
-    header nav li:first-child {
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 30px;
     }
 }

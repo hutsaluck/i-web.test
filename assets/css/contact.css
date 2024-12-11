@@ -16,7 +16,8 @@
 
     position: relative;
     width: fit-content;
-    margin: 0 auto 20px;
+    margin: -150px auto 20px;
+    padding-top: 150px;
 }
 
 .contact h2 span {
@@ -28,7 +29,7 @@
     content: url(../images/title-img.svg);
     position: absolute;
     left: -20px;
-    top: -20%;
+    top: 140px;
     z-index: -9;
 }
 

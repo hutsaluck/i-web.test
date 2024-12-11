@@ -25,9 +25,6 @@ img{
 }
 
 html body h2{
-    margin-top: -150px !important;
-    padding-top: 150px !important;
-}
-html body main > section > h2:before{
-    top: 140px !important;
+    margin-top: -150px;
+    padding-top: 150px;
 }

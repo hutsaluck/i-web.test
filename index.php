@@ -1,11 +1,11 @@
 <?php get_header() ?>
 <main>
-    <section class="main">
+    <section class="main" id="home">
         <h1><?php echo __('Keep your dreams aroused with a cup of coffee.', 'i-web') ?></h1>
         <p><?php echo __('The coffee ideas shared by these generators are not cool at all, as they are not a human being.', 'i-web') ?></p>
         <a href="#"><?php echo __('Buy Now', 'i-web') ?></a>
     </section>
-    <section class="shop">
+    <section class="shop" id="best_offer">
         <h2><?php echo __('That is Our Best Offer', 'i-web') ?></h2>
         <p><?php echo __('A coffee shop will help you to tell the audience what your business.', 'i-web') ?></p>
         <div class="wrap-products">
@@ -29,7 +29,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2><?php echo __('Our Gallery', 'i-web') ?></h2>
         <p><?php echo __('The coffee shop name generator is a great tool for those that are deliberating what to call their new
             coffee.', 'i-web') ?></p>
@@ -55,7 +55,7 @@
         </div>
         <a href="#"><?php echo __('LOAD MORE', 'i-web') ?></a>
     </section>
-    <section class="social">
+    <section class="social" id="follow">
         <h3><?php echo __('Follow US', 'i-web') ?></h3>
         <h2><?php echo __('Have an inquiry?', 'i-web') ?></h2>
         <h2><?php echo __('Text or call and ask Something.', 'i-web') ?></h2>
@@ -76,7 +76,7 @@
             </a>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="about">
         <h2><?php echo __('Update News', 'i-web') ?></h2>
         <p><?php echo __('A cup of brewed coffee represents a contribution of up to 1.8 grams of fiber of the recommended.', 'i-web') ?></p>
         <div class="wrap-posts">

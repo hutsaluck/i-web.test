@@ -6,12 +6,15 @@ define( "LINK_THEME", get_stylesheet_directory_uri() );
 /*
  * Connect scripts
  * */
-add_action( 'wp_enqueue_scripts', 'eco_enqueue_scripts' );
-function eco_enqueue_scripts()
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+function enqueue_scripts()
 {
-
     /* Styles */
     wp_enqueue_style( 'i-web-style', get_stylesheet_uri(), array(), '1.0' );
+
+    /* Scripts */
+    wp_enqueue_script( 'i-web-jquery', LINK_THEME . '/assets/js/jquery.min.js', array(), '1.0' );
+    wp_enqueue_script('i-web-main', LINK_THEME . '/assets/js/main.js', ['i-web-jquery'], '1.0', true);
 }
 
 /* Disable style contact form 7 */
