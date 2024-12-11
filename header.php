@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,6 +8,11 @@
     <title><?php echo __("Coffee Shop — найкраща кав'ярня у вашому місті", 'i-web') ?></title>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description" content="<?php echo __("Скуштуйте найсмачнішу каву та десерти у кав'ярні Coffee Shop. Затишна атмосфера та найкраще обслуговування – чекаємо на вас!", 'i-web') ?>">
+    <meta property="og:url" content="https://www.tivas.pp.ua" />
+    <meta prefix="og: http://ogp.me/ns#" />
+    <meta property="og:image" content="https://www.tivas.pp.ua/wp-content/uploads/2024/12/social-1024x683.png" />
+    <meta property="og:image:secure_url" content="https://www.tivas.pp.ua/wp-content/uploads/2024/12/social-1024x683.png" />
+    <meta name="twitter:image" content="https://www.tivas.pp.ua/wp-content/uploads/2024/12/social-1024x683.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
